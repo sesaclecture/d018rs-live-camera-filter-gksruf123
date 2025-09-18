@@ -44,5 +44,5 @@ class Filters:
     def switch_previous_filter(self):
         # TODO: Update currently selected kernel to the previous
         self.idx -= 1
-        if self.idx <= 0:
+        if self.idx < 0:
             self.idx = len(self.names) - 1
